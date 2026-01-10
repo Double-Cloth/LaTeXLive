@@ -6,7 +6,7 @@
  * @Title 妈叔出品-LaTeX公式编辑器配置
  */
 
-const Environment = "release";
+const Environment = "development";
 
 const Config = {
   development: {
@@ -78,7 +78,7 @@ const Config = {
       RedirectURL: "完整网址",
     },
   },
-  
+
   release: {
     Version: "1.6.5",
     MainJS: {
