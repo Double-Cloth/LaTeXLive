@@ -221,7 +221,7 @@ export var mathpix = {
         mathpix.progressReset();
         $("#loadingModal").css("display", "none");
         setTimeout(() => {
-          window.location.href = "../login";
+          window.location.href = "./login.html";
         }, 2000);
       }
     );

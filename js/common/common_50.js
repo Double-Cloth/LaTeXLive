@@ -5,7 +5,7 @@ document.writeln("<script src='" + boot_body + "/lib/bootstrap-4.3.1-dist/js/boo
 
 var scriptLoader = {
   script_list: {
-    latex: ["<script src='" + boot_body + "/lib/tippy/popper.min.js'></script>", "<script src='https://cdn.bootcss.com/tippy.js/6.1.0/tippy-bundle.umd.min.js'></script>", "<script src='" + boot_body + "/lib/caret/caret.js'></script>", "<script src='" + boot_body + js_body + "?ver=" + ver_body + "' type='module'></script>"],
+    latex: ["<script src='" + boot_body + "/lib/tippy/popper.min.js'></script>", "<script src='/lib/bootcss/tippy-bundle.umd.min.js'></script>", "<script src='" + boot_body + "/lib/caret/caret.js'></script>", "<script src='" + boot_body + js_body + "?ver=" + ver_body + "' type='module'></script>"],
     readme: ["<script src='" + boot_body + js_body + "?ver=" + ver_body + "' type='module'></script>"],
     update: ["<script src='" + boot_body + js_body + "?ver=" + ver_body + "' type='module'></script>"],
     messageboard: ["<script src='" + boot_body + "/lib/wangEditor/wangEditor.min.js'></script>", "<script src='" + boot_body + js_body + "?ver=" + ver_body + "' type='module'></script>"],
@@ -76,7 +76,7 @@ var scriptLoader = {
   },
   googleads: function () {
     if (Environment != "development") {
-      document.writeln("<script async src='https://www.googletagmanager.com/gtag/js?id=UA-164353536-1'></script>");
+      document.writeln("<script async src='/lib/googletagmanager/js-id=UA-164353536-1.js'></script>");
       document.writeln("  <script>");
       document.writeln("    window.dataLayer = window.dataLayer || [];");
       document.writeln("    function gtag() {");
