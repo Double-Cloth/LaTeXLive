@@ -103,12 +103,12 @@ var headCommon = {
     document.writeln("    };");
     document.writeln("  </script>");
     // document.writeln("  <script src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script>");
-    document.writeln("  <script id='MathJax-script' async src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js'></script>");
+    document.writeln("  <script id='MathJax-script' async src='../lib/MathJax-master__/es5/tex-chtml-full.js'></script>");
   },
   googleads: function () {
     if (Environment != "development") {
       document.writeln("  <script data-ad-client='ca-pub-4786420636728190' async");
-      document.writeln("    src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'></script>");
+      document.writeln("    src='../local_assets/js/0cd73468e920c9cd6270f0fc351b69a6.js></script>");
     }
   },
 };

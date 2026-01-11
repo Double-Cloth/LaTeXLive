@@ -50,99 +50,99 @@ class QC extends Oauth{
             
             /*                       qzone                    */
             "add_blog" => array(
-                "https://graph.qq.com/blog/add_one_blog",
+                "../../../../local_assets/misc/64e0a11e0556c39060e7df6156ec9f93.json",
                 array("title", "format" => "json", "content" => null),
                 "POST"
             ),
             "add_topic" => array(
-                "https://graph.qq.com/shuoshuo/add_topic",
+                "../../../../local_assets/misc/c04185028a84abb5ed6c920c54da5133.json",
                 array("richtype","richval","con","#lbs_nm","#lbs_x","#lbs_y","format" => "json", "#third_source"),
                 "POST"
             ),
             "get_user_info" => array(
-                "https://graph.qq.com/user/get_user_info",
+                "../../../../local_assets/misc/0aeba4b8fddd4991efe5879c842bf0b9.json",
                 array("format" => "json"),
                 "GET"
             ),
             "add_one_blog" => array(
-                "https://graph.qq.com/blog/add_one_blog",
+                "../../../../local_assets/misc/64e0a11e0556c39060e7df6156ec9f93.json",
                 array("title", "content", "format" => "json"),
                 "GET"
             ),
             "add_album" => array(
-                "https://graph.qq.com/photo/add_album",
+                "../../../../local_assets/misc/61014f21447d7ca877faf2292d778ff5.json",
                 array("albumname", "#albumdesc", "#priv", "format" => "json"),
                 "POST"
             ),
             "upload_pic" => array(
-                "https://graph.qq.com/photo/upload_pic",
+                "../../../../local_assets/misc/5ed53b958b283cbbccc583265af39ce7.json",
                 array("picture", "#photodesc", "#title", "#albumid", "#mobile", "#x", "#y", "#needfeed", "#successnum", "#picnum", "format" => "json"),
                 "POST"
             ),
             "list_album" => array(
-                "https://graph.qq.com/photo/list_album",
+                "../../../../local_assets/misc/4e6cb9edfae99c69b6b094b07d260ac9.json",
                 array("format" => "json")
             ),
             "add_share" => array(
-                "https://graph.qq.com/share/add_share",
+                "../../../../local_assets/misc/c26aec8a3879c01e19fb6eb20fd3a4b2.json",
                 array("title", "url", "#comment","#summary","#images","format" => "json","#type","#playurl","#nswb","site","fromurl"),
                 "POST"
             ),
             "check_page_fans" => array(
-                "https://graph.qq.com/user/check_page_fans",
+                "../../../../local_assets/misc/b25c3f8fdadac353019f884eee0e37c7.json",
                 array("page_id" => "314416946","format" => "json")
             ),
             /*                    wblog                             */
 
             "add_t" => array(
-                "https://graph.qq.com/t/add_t",
+                "../../../../local_assets/misc/ead30c0ce664b8860e8514e499868535.json",
                 array("format" => "json", "content","#clientip","#longitude","#compatibleflag"),
                 "POST"
             ),
             "add_pic_t" => array(
-                "https://graph.qq.com/t/add_pic_t",
+                "../../../../local_assets/misc/1fbb61f65b542828a5adb3d3efbbada4.json",
                 array("content", "pic", "format" => "json", "#clientip", "#longitude", "#latitude", "#syncflag", "#compatiblefalg"),
                 "POST"
             ),
             "del_t" => array(
-                "https://graph.qq.com/t/del_t",
+                "../../../../local_assets/misc/fb65cd6fb05379d1bce48919a901b728.json",
                 array("id", "format" => "json"),
                 "POST"
             ),
             "get_repost_list" => array(
-                "https://graph.qq.com/t/get_repost_list",
+                "../../../../local_assets/misc/d6ba1eaf0a826e938c93b90639fbdd6a.json",
                 array("flag", "rootid", "pageflag", "pagetime", "reqnum", "twitterid", "format" => "json")
             ),
             "get_info" => array(
-                "https://graph.qq.com/user/get_info",
+                "../../../../local_assets/misc/8d1b05d0b672416bacb4f68f5dfe4547.json",
                 array("format" => "json")
             ),
             "get_other_info" => array(
-                "https://graph.qq.com/user/get_other_info",
+                "../../../../local_assets/misc/134d478887c7f9d26441d1305e4c5f1a.json",
                 array("format" => "json", "#name", "fopenid")
             ),
             "get_fanslist" => array(
-                "https://graph.qq.com/relation/get_fanslist",
+                "../../../../local_assets/misc/203e9d3cc3eeb19dff129c4717dd10af.json",
                 array("format" => "json", "reqnum", "startindex", "#mode", "#install", "#sex")
             ),
             "get_idollist" => array(
-                "https://graph.qq.com/relation/get_idollist",
+                "../../../../local_assets/misc/f75fa50971920b362beba15564b7777a.json",
                 array("format" => "json", "reqnum", "startindex", "#mode", "#install")
             ),
             "add_idol" => array(
-                "https://graph.qq.com/relation/add_idol",
+                "../../../../local_assets/misc/da63de0a29c505a427965dd5d1540448.json",
                 array("format" => "json", "#name-1", "#fopenids-1"),
                 "POST"
             ),
             "del_idol" => array(
-                "https://graph.qq.com/relation/del_idol",
+                "../../../../local_assets/misc/5ec4f83dd65d51fbf4b8ce150c3f5f43.json",
                 array("format" => "json", "#name-1", "#fopenid-1"),
                 "POST"
             ),
             /*                           pay                          */
 
             "get_tenpay_addr" => array(
-                "https://graph.qq.com/cft_info/get_tenpay_addr",
+                "../../../../local_assets/misc/8b1d144d7eb61526cf7e60d7a4953916.json",
                 array("ver" => 1,"limit" => 5,"offset" => 0,"format" => "json")
             )
         );
@@ -211,7 +211,7 @@ class QC extends Oauth{
         }
 
         if($method == "POST"){
-            if($baseUrl == "https://graph.qq.com/blog/add_one_blog") $response = $this->urlUtils->post($baseUrl, $keysArr, 1);
+            if($baseUrl == "../../../../local_assets/misc/64e0a11e0556c39060e7df6156ec9f93.json") $response = $this->urlUtils->post($baseUrl, $keysArr, 1);
             else $response = $this->urlUtils->post($baseUrl, $keysArr, 0);
         }else if($method == "GET"){
             $response = $this->urlUtils->get($baseUrl, $keysArr);
