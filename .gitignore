@@ -1,0 +1,9 @@
+# --- IDE & Editors ---
+# JetBrains IDEs (WebStorm, IntelliJ IDEA, etc.)
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# VS Code directory (often contains local user settings)
+.vscode
